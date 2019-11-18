@@ -10,4 +10,8 @@ describe('sum',function(){
     assert.strictEqual(sum(-1,-2),-3);
   });
 
+  it('should add one positive integer one negative integer',function() {
+    assert.strictEqual(sum(-3,5),2);
+  });
+
 });
