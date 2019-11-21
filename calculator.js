@@ -1,10 +1,11 @@
-const sum = require('./src/sum').sum;
-const subtract = require('./src/sum').subtract;
+const chooseArithmeticOperation = require('./src/chooseArithmeticOperation');
+const performOperation = chooseArithmeticOperation.performOperation;
 
 const main = function() {
-  number1 = +process.argv[2];
-  number2 = +process.argv[3];
-  result =  subtract(number1,number2);
+  operation = process.argv[2];
+  number1 = +process.argv[3];
+  number2 = +process.argv[4];
+  result =  performOperation(operation,number1,number2);
   console.log(result);
 };
 

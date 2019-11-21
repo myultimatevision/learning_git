@@ -1,5 +1,5 @@
 const assert = require('assert');
-const sum = require('../src/sum').sum;
+const sum = require('../src/arithmetic').sum;
 
 describe('sum',function(){
   it('should add two positive integers',function() {
